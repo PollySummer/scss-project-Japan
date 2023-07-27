@@ -79,6 +79,7 @@ header {
   font-family: $font-stack-regular;
   margin: 40px 100px;
   line-height: 28px;
+  font-size: 1.1em;
   .about-country {
     h1 {
       font-family: $font-stack-main-headers;
@@ -86,11 +87,12 @@ header {
       margin-top: 40px;
     }
     p {
-      padding: 20px;
+      padding: 30px;
     }
     .japan-flag img {
+      margin: 20px;
+      float: right;
       width: 300px;
-      float: left;
     }
   }
 }

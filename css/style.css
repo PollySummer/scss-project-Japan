@@ -107,6 +107,7 @@ header {
   font-family: "Marcellus", sans-serif;
   margin: 40px 100px;
   line-height: 28px;
+  font-size: 1.1em;
 }
 .content .about-country h1 {
   font-family: "BreeSerif", sans-serif;
@@ -114,11 +115,12 @@ header {
   margin-top: 40px;
 }
 .content .about-country p {
-  padding: 20px;
+  padding: 30px;
 }
 .content .about-country .japan-flag img {
+  margin: 20px;
+  float: right;
   width: 300px;
-  float: left;
 }
 
 /*# sourceMappingURL=style.css.map */
