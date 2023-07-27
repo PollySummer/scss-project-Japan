@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "BreeSerif";
+  src: url(../fonts/BreeSerif-Regular.ttf);
+}
+@font-face {
+  font-family: "CormorantInfantBold";
+  src: url(../fonts/CormorantInfant-Bold.ttf);
+}
+@font-face {
+  font-family: "Marcellus";
+  src: url(../fonts/Marcellus-Regular.ttf);
+}
+@font-face {
+  font-family: "BreeSerif";
+  src: url(../fonts/BreeSerif-Regular.ttf);
+}
+@font-face {
+  font-family: "CormorantInfantBold";
+  src: url(../fonts/CormorantInfant-Bold.ttf);
+}
+@font-face {
+  font-family: "Marcellus";
+  src: url(../fonts/Marcellus-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/background.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.navigation {
+  color: #b8336a;
+  line-height: 28px;
+  letter-spacing: 3px;
+  display: flex;
+  font-family: "CormorantInfantBold", sans-serif;
+  font-size: 1.5em;
+  border-bottom: 0.5px solid rgb(255, 255, 255);
+}
+.navigation a {
+  text-decoration: none;
+  color: #b8336a;
+}
+.navigation .logo {
+  flex: 1;
+  display: flex;
+}
+.navigation .logo-img {
+  margin: 20px;
+}
+.navigation .logo-name {
+  margin-top: 30px;
+  font-size: 2em;
+}
+.navigation .nav-items {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navigation .nav-items ul {
+  display: flex;
+  list-style-type: none;
+}
+.navigation .nav-items ul li {
+  padding: 30px;
+}
+
+.main-info {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-info .main-img img {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.main-info .main-text {
+  color: #b8336a;
+  line-height: 28px;
+  letter-spacing: 3px;
+  padding: 20px 80px;
+  text-align: center;
+  font-family: "Marcellus", sans-serif;
+  font-size: 1.1em;
+}
+
+.content {
+  background-color: rgba(190, 226, 250, 0.7);
+  display: flex;
+  font-family: "Marcellus", sans-serif;
+  margin: 40px 100px;
+  line-height: 28px;
+}
+.content .about-country h1 {
+  font-family: "BreeSerif", sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+.content .about-country p {
+  padding: 20px;
+}
+.content .about-country .japan-flag img {
+  width: 300px;
+  float: left;
+}
+
+/*# sourceMappingURL=style.css.map */

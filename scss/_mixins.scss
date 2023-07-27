@@ -1,0 +1,11 @@
+@mixin fontSettings {
+  color: #b8336a;
+  line-height: 28px;
+  letter-spacing: 3px;
+}
+@mixin setLink {
+    a{
+        text-decoration: none;
+        color: #b8336a;
+    }
+}
