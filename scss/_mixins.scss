@@ -9,3 +9,10 @@
         color: #b8336a;
     }
 }
+@mixin setHeader2{
+  h2{
+    margin: 30px 0 0 30px;
+    font-family: $font-stack-secondary-headers;
+    font-size: 1.8em;
+  }
+}

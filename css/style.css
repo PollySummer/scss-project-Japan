@@ -110,13 +110,15 @@ header {
   line-height: 29px;
   font-size: 1.2em;
 }
+.content h2 {
+  margin: 30px 0 0 30px;
+  font-family: "CormorantInfantBold", sans-serif;
+  font-size: 1.8em;
+}
 .content .about-country h1 {
   font-family: "BreeSerif", sans-serif;
   text-align: center;
   margin-top: 40px;
-}
-.content .about-country h2 {
-  margin: 30px 0 0 30px;
 }
 .content .about-country p {
   padding: 30px;
@@ -132,12 +134,27 @@ header {
   display: flex;
   flex-direction: column;
 }
+.geography h2 {
+  margin: 30px 0 0 30px;
+  font-family: "CormorantInfantBold", sans-serif;
+  font-size: 1.8em;
+}
 .geography .geo-images {
   display: flex;
   justify-content: space-around;
 }
 .geography .geo-images img {
   max-width: 330px;
+  border-radius: 4px;
+}
+.geography p {
+  padding: 30px;
+}
+.geography .img-tokyo .tokyo {
+  margin: 30px 20px;
+  float: left;
+  max-width: 340px;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */

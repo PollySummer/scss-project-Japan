@@ -74,6 +74,7 @@ header {
   }
 }
 .content {
+  @include setHeader2;
   background-color: rgba(190, 226, 250, 0.7);
   display: flex;
   flex-direction: column;
@@ -87,30 +88,40 @@ header {
       text-align: center;
       margin-top: 40px;
     }
-    h2 {
-      margin: 30px 0 0 30px;
-    }
     p {
-      padding: 30px;
+      padding: $text-padding;
     }
     .japan-flag {
       .flag {
         margin: 30px 20px 10px 10px;
         float: right;
         max-width: 300px;
-        border-radius: 4px;
+        border-radius: $img-border;
       }
     }
   }
 }
 .geography {
+  @include setHeader2;
   display: flex;
   flex-direction: column;
   .geo-images {
     display: flex;
     justify-content: space-around;
-    img{
+    img {
       max-width: 330px;
+      border-radius: $img-border;
+    }
+  }
+  p {
+    padding: $text-padding;
+  }
+  .img-tokyo {
+    .tokyo {
+      margin: 30px 20px;
+      float: left;
+      max-width: 340px;
+      border-radius: $img-border;
     }
   }
 }
