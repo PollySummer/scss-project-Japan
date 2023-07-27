@@ -1,11 +1,13 @@
 @import "variables";
 @import "fonts";
 @import "mixins";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-image: url(../images/background.webp);
   background-repeat: no-repeat;
@@ -13,15 +15,15 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
 header {
   background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(148, 187, 233, 1) 100%);
   box-shadow: $shadow;
 }
+
 .navigation {
   @include fontSettings;
   @include setLink;
@@ -29,31 +31,38 @@ header {
   font-family: $font-stack-secondary-headers;
   font-size: 1.5em;
   border-bottom: 0.5px solid rgb(255, 255, 255);
+
   .logo {
     flex: 1;
     display: flex;
   }
+
   .logo-img {
     margin: 20px;
   }
+
   .logo-name {
     margin-top: 30px;
     font-size: 2em;
   }
+
   .nav-items {
     flex: 2;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
     ul {
       display: flex;
       list-style-type: none;
+
       li {
         padding: 30px;
       }
     }
   }
 }
+
 .main-info {
   padding-top: 20px;
   display: flex;
@@ -65,6 +74,7 @@ header {
     border-radius: 50%;
     box-shadow: $shadow;
   }
+
   .main-text {
     @include fontSettings;
     padding: 20px 80px;
@@ -73,6 +83,7 @@ header {
     font-size: 1.1em;
   }
 }
+
 .content {
   @include setHeader2;
   background-color: rgba(190, 226, 250, 0.7);
@@ -82,15 +93,18 @@ header {
   margin: 40px 100px;
   line-height: 29px;
   font-size: 1.2em;
+
   .about-country {
     h1 {
       font-family: $font-stack-main-headers;
       text-align: center;
       margin-top: 40px;
     }
+
     p {
       padding: $text-padding;
     }
+
     .japan-flag {
       .flag {
         margin: 30px 20px 10px 10px;
@@ -101,27 +115,54 @@ header {
     }
   }
 }
+
 .geography {
   @include setHeader2;
+  @include setImg;
   display: flex;
   flex-direction: column;
+
   .geo-images {
     display: flex;
     justify-content: space-around;
-    img {
-      max-width: 330px;
-      border-radius: $img-border;
-    }
   }
+
   p {
     padding: $text-padding;
   }
-  .img-tokyo {
+
+}
+
+.demographics {
+  @include setHeader2;
+
+  .population {
     .tokyo {
       margin: 30px 20px;
       float: left;
       max-width: 340px;
       border-radius: $img-border;
+    }
+
+    p {
+      padding: $text-padding;
+    }
+  }
+}
+
+.culture-images {
+  @include setImg;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.culture {
+  @include setHeader2;
+
+  .architecture {
+    p {
+      padding: $text-padding;
     }
   }
 }

@@ -139,22 +139,52 @@ header {
   font-family: "CormorantInfantBold", sans-serif;
   font-size: 1.8em;
 }
+.geography img {
+  max-width: 330px;
+  border-radius: 4px;
+  margin: 10px;
+}
 .geography .geo-images {
   display: flex;
   justify-content: space-around;
 }
-.geography .geo-images img {
-  max-width: 330px;
-  border-radius: 4px;
-}
 .geography p {
   padding: 30px;
 }
-.geography .img-tokyo .tokyo {
+
+.demographics h2 {
+  margin: 30px 0 0 30px;
+  font-family: "CormorantInfantBold", sans-serif;
+  font-size: 1.8em;
+}
+.demographics .population .tokyo {
   margin: 30px 20px;
   float: left;
   max-width: 340px;
   border-radius: 4px;
+}
+.demographics .population p {
+  padding: 30px;
+}
+
+.culture-images {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.culture-images img {
+  max-width: 330px;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.culture h2 {
+  margin: 30px 0 0 30px;
+  font-family: "CormorantInfantBold", sans-serif;
+  font-size: 1.8em;
+}
+.culture .architecture p {
+  padding: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

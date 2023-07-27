@@ -16,3 +16,10 @@
     font-size: 1.8em;
   }
 }
+@mixin setImg{
+  img{
+    max-width: 330px;
+    border-radius: $img-border;
+    margin: 10px;
+    }
+}
