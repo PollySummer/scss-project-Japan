@@ -160,9 +160,44 @@ header {
 .culture {
   @include setHeader2;
 
+  .h-culture {
+    text-align: center;
+    font-size: 2.3em;
+    font-family: $font-stack-main-headers;
+  }
+
   .architecture {
     p {
       padding: $text-padding;
+    }
+  }
+
+  .anime {
+    @include setHeader2;
+    @include setImg;
+
+    .about-anime {
+      .anime-img {
+        float: right;
+      }
+
+      p {
+        padding: $text-padding;
+      }
+    }
+  }
+
+  .tea-tradition {
+    @include setHeader2;
+
+    p {
+      padding: $text-padding;
+    }
+
+    .tea-img {
+      display: flex;
+      justify-content: center;
+      border-radius: $img-border;
     }
   }
 }
