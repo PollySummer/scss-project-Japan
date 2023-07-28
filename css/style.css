@@ -22,6 +22,18 @@
   font-family: "Marcellus";
   src: url(../fonts/Marcellus-Regular.ttf);
 }
+@font-face {
+  font-family: "BreeSerif";
+  src: url(../fonts/BreeSerif-Regular.ttf);
+}
+@font-face {
+  font-family: "CormorantInfantBold";
+  src: url(../fonts/CormorantInfant-Bold.ttf);
+}
+@font-face {
+  font-family: "Marcellus";
+  src: url(../fonts/Marcellus-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -55,6 +67,13 @@ header {
   text-decoration: none;
   color: #b8336a;
 }
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+}
+.navigation ul li {
+  padding: 30px;
+}
 .navigation .logo {
   flex: 1;
   display: flex;
@@ -71,13 +90,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-}
-.navigation .nav-items ul {
-  display: flex;
-  list-style-type: none;
-}
-.navigation .nav-items ul li {
-  padding: 30px;
 }
 
 .main-info {
@@ -196,13 +208,15 @@ header {
   font-family: "CormorantInfantBold", sans-serif;
   font-size: 1.8em;
 }
-.culture .anime img {
-  max-width: 330px;
+.culture .anime .about-anime .anime-img {
+  float: right;
   border-radius: 4px;
   margin: 10px;
 }
-.culture .anime .about-anime .anime-img {
-  float: right;
+.culture .anime .about-anime .anime-img img {
+  width: 330px;
+  border-radius: 4px;
+  margin: 10px;
 }
 .culture .anime .about-anime p {
   padding: 30px;
@@ -222,27 +236,119 @@ header {
 }
 
 .contact-us {
+  margin: 10% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "CormorantInfantBold", sans-serif;
-  font-size: 1.5em;
 }
-.contact-us span {
-  font-size: 1.6em;
+.contact-us .button {
+  width: 10%;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+  transition: 0.2s linear;
+  background: #f23eb0;
+  text-decoration: none;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Marcellus", sans-serif;
+}
+.contact-us .button:hover {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #f23eb0;
+}
+.contact-us h2 {
+  font-family: "CormorantInfantBold", sans-serif;
+  font-size: 2em;
   margin: 10px;
 }
-.contact-us #email {
-  min-height: 30px;
-  margin-bottom: 20px;
+.contact-us .email-input,
+.contact-us .text-input {
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 20%;
+  font-family: "Marcellus", sans-serif;
+  font-size: 1.2em;
 }
-.contact-us .my-form {
-  border-radius: 5px;
+.contact-us .text-input {
+  height: 150px;
 }
-.contact-us .sub-button {
+
+footer {
+  background-color: rgba(190, 226, 250, 0.7);
+  font-family: "CormorantInfantBold", sans-serif;
+  font-size: 1.6em;
+}
+footer .footer-links {
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+footer .footer-links a {
+  text-decoration: none;
+  color: #b8336a;
+}
+footer .footer-links ul {
+  display: flex;
+  list-style-type: none;
+}
+footer .footer-links ul li {
+  padding: 30px;
+}
+footer .rights {
+  text-align: center;
+  padding: 50px;
+  color: #b8336a;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    font-size: 1.3em;
+  }
+  .navigation .logo-img {
+    margin: 20px;
+  }
+  .navigation .logo-name {
+    margin-top: 30px;
+    font-size: 1.5em;
+  }
+  .navigation .nav-items {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+  }
+  .navigation ul li {
+    padding: 15px;
+  }
+  .main-info .main-img img {
+    width: 280px;
+  }
+  .main-info .main-text {
+    letter-spacing: 2px;
+    font-size: 1em;
+  }
+  .content {
+    font-size: 1em;
+  }
+  .geography .geo-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .culture-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .anime-img img {
+    max-width: 200px;
+  }
+  .tea-img img {
+    width: 430px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

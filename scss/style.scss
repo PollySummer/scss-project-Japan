@@ -27,6 +27,7 @@ header {
 .navigation {
   @include fontSettings;
   @include setLink;
+  @include setList;
   display: flex;
   font-family: $font-stack-secondary-headers;
   font-size: 1.5em;
@@ -51,15 +52,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
-    ul {
-      display: flex;
-      list-style-type: none;
-
-      li {
-        padding: 30px;
-      }
-    }
   }
 }
 
@@ -86,7 +78,7 @@ header {
 
 .content {
   @include setHeader2;
-  background-color: rgba(190, 226, 250, 0.7);
+  background-color: $bg-head-foot;
   display: flex;
   flex-direction: column;
   font-family: $font-stack-regular;
@@ -174,11 +166,18 @@ header {
 
   .anime {
     @include setHeader2;
-    @include setImg;
 
     .about-anime {
       .anime-img {
         float: right;
+        border-radius: $img-border;
+        margin: 10px;
+
+        img {
+          width: 330px;
+          border-radius: $img-border;
+          margin: 10px;
+        }
       }
 
       p {
@@ -201,27 +200,119 @@ header {
     }
   }
 }
-.contact-us{
+
+.contact-us {
+  @include setBtn;
+
+  margin: 10% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: $font-stack-secondary-headers;
-  font-size: 1.5em;
-  span{
-    font-size: 1.6em;
+
+  h2 {
+    font-family: $font-stack-secondary-headers;
+    font-size: 2em;
     margin: 10px;
   }
-  #email{
-    min-height: 30px;
-    margin-bottom: 20px;
-  }
-  .my-form{
-    border-radius: 5px;
 
+  .email-input,
+  .text-input {
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: $shadow;
+    width: 20%;
+    font-family: $font-stack-regular;
+    font-size: 1.2em;
   }
-  .sub-button{
+
+  .text-input {
+    height: 150px;
+  }
+}
+
+footer {
+  background-color: $bg-head-foot;
+  font-family: $font-stack-secondary-headers;
+  font-size: 1.6em;
+
+  .footer-links {
+    @include setLink;
+    @include setList;
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: space-evenly;
+    padding-top: 50px;
+  }
+
+  .rights {
+    text-align: center;
+    padding: 50px;
+    color: #b8336a;
+  }
+
+}
+
+@media (max-width:768px) {
+  .navigation {
+    font-size: 1.3em;
+
+    .logo-img {
+      margin: 20px;
+    }
+
+    .logo-name {
+      margin-top: 30px;
+      font-size: 1.5em;
+    }
+
+    .nav-items {
+      flex: 3;
+      display: flex;
+      justify-content: center;
+    }
+
+    ul {
+      li {
+        padding: 15px;
+      }
+    }
+  }
+
+  .main-info {
+    .main-img img {
+      width: 280px;
+    }
+
+    .main-text {
+      letter-spacing: 2px;
+      font-size: 1em;
+    }
+  }
+
+  .content {
+    font-size: 1em;
+  }
+
+  .geography {
+    .geo-images {
+      @include tabletImg;
+    }
+  }
+
+  .culture-images {
+    @include tabletImg;
+  }
+
+  .anime-img {
+    img {
+      max-width: 200px;
+    }
+  }
+
+  .tea-img {
+    img {
+      width: 430px;
+    }
   }
 }
