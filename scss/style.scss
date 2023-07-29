@@ -248,7 +248,7 @@ footer {
 
 }
 
-@media (max-width:768px) {
+@media (max-width:1230px) {
   .navigation {
     font-size: 1.3em;
 
@@ -405,7 +405,6 @@ footer {
 }
 
 @media (max-width: 375px) {
-
   .nav-items {
     ul {
       display: flex;
@@ -415,9 +414,7 @@ footer {
       line-height: 15px;
       margin-bottom: 20px;
     }
-
   }
-
   .main-info {
     .main-img {
       img {
@@ -425,50 +422,38 @@ footer {
       }
     }
   }
-
   .main-text {
     p {
       line-height: 20px;
     }
-
   }
-
   .content {
-    background-color: white;
+    background-color: $bg-head-foot;
   }
-
   .geography {
-
     .text-geo {
       display: flex;
       align-items: center;
       text-align: center;
-      font-size: 10px;
+      font-size: 0.8em;
     }
   }
-
   .contact-us {
-
     .email-input,
     .text-input {
       width: 80%;
     }
-
     .button {
       font-size: 1.2em;
       width: 25%;
     }
   }
-
   footer {
     .footer-links {
       line-height: 1px;
     }
-
     .rights {
       font-size: 0.9em;
     }
   }
-
-
 }
