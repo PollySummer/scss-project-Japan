@@ -59,8 +59,19 @@
     box-shadow: 0 0 0 2px white, 0 0 0 4px #f23eb0;
   }
 }
-@mixin tabletImg{
+
+@mixin tabletImg {
+  display: flex;
+  flex-direction: column;
+
+}
+
+@mixin phoneImg {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  img {
+    width: 240px;
+  }
 }

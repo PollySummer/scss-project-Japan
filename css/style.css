@@ -208,13 +208,13 @@ header {
   font-family: "CormorantInfantBold", sans-serif;
   font-size: 1.8em;
 }
-.culture .anime .about-anime .anime-img {
-  float: right;
+.culture .anime img {
+  max-width: 330px;
   border-radius: 4px;
   margin: 10px;
 }
-.culture .anime .about-anime .anime-img img {
-  width: 330px;
+.culture .anime .about-anime .anime-img {
+  float: right;
   border-radius: 4px;
   margin: 10px;
 }
@@ -269,7 +269,7 @@ header {
   border-radius: 10px;
   border: 0;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 20%;
+  width: 25%;
   font-family: "Marcellus", sans-serif;
   font-size: 1.2em;
 }
@@ -336,18 +336,125 @@ footer .rights {
   .geography .geo-images {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .culture-images {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .anime-img img {
-    max-width: 200px;
+    width: 200px;
   }
   .tea-img img {
     width: 430px;
+  }
+  .contact-us .email-input,
+  .contact-us .text-input {
+    width: 40%;
+    font-size: 1.1em;
+  }
+  footer {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    background-image: none;
+  }
+  .content {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .navigation {
+    font-size: 1.3em;
+    flex-direction: column;
+  }
+  .navigation .nav-items {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    font-size: 0.9em;
+  }
+  .navigation .nav-items ul li {
+    padding: 10px;
+  }
+  .main-info .main-img img {
+    width: 260px;
+  }
+  .main-info .main-text {
+    letter-spacing: 1px;
+    font-size: 1em;
+  }
+  .content {
+    font-size: 1em;
+  }
+  .japan-flag,
+  .geography,
+  .population,
+  .culture-images,
+  .tea-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .japan-flag img,
+  .geography img,
+  .population img,
+  .culture-images img,
+  .tea-img img {
+    width: 240px;
+  }
+  .contact-us {
+    background-color: rgba(190, 226, 250, 0.7);
+    margin: 0;
+  }
+  .contact-us .button {
+    width: 20%;
+  }
+  footer .footer-links nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em;
+  }
+}
+@media (max-width: 375px) {
+  .nav-items ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 15px;
+    margin-bottom: 20px;
+  }
+  .main-info .main-img img {
+    width: 220px;
+  }
+  .main-text p {
+    line-height: 20px;
+  }
+  .content {
+    background-color: white;
+  }
+  .geography .text-geo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+  }
+  .contact-us .email-input,
+  .contact-us .text-input {
+    width: 80%;
+  }
+  .contact-us .button {
+    font-size: 1.2em;
+    width: 25%;
+  }
+  footer .footer-links {
+    line-height: 1px;
+  }
+  footer .rights {
+    font-size: 0.9em;
   }
 }
 
