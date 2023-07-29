@@ -7,7 +7,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background-image: url(../images/background.webp);
   background-repeat: no-repeat;
@@ -15,7 +14,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-
 header {
   background: rgb(238, 174, 202);
   background: radial-gradient(circle,
@@ -23,7 +21,6 @@ header {
       rgba(148, 187, 233, 1) 100%);
   box-shadow: $shadow;
 }
-
 .navigation {
   @include fontSettings;
   @include setLink;
@@ -32,21 +29,17 @@ header {
   font-family: $font-stack-secondary-headers;
   font-size: 1.5em;
   border-bottom: 0.5px solid rgb(255, 255, 255);
-
   .logo {
     flex: 1;
     display: flex;
   }
-
   .logo-img {
     margin: 20px;
   }
-
   .logo-name {
     margin-top: 30px;
     font-size: 2em;
   }
-
   .nav-items {
     flex: 2;
     display: flex;
@@ -54,19 +47,16 @@ header {
     justify-content: flex-end;
   }
 }
-
 .main-info {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   .main-img img {
     width: 300px;
     border-radius: 50%;
     box-shadow: $shadow;
   }
-
   .main-text {
     @include fontSettings;
     padding: 20px 80px;
@@ -75,7 +65,6 @@ header {
     font-size: 1.1em;
   }
 }
-
 .content {
   @include setHeader2;
   background-color: $bg-head-foot;
@@ -85,18 +74,15 @@ header {
   margin: 40px 100px;
   line-height: 29px;
   font-size: 1.2em;
-
   .about-country {
     h1 {
       font-family: $font-stack-main-headers;
       text-align: center;
       margin-top: 40px;
     }
-
     p {
       padding: $text-padding;
     }
-
     .japan-flag {
       .flag {
         margin: 30px 20px 10px 10px;
@@ -107,27 +93,22 @@ header {
     }
   }
 }
-
 .geography {
   @include setHeader2;
   @include setImg;
   display: flex;
   flex-direction: column;
-
   .geo-images {
     display: flex;
     justify-content: space-around;
   }
-
   p {
     padding: $text-padding;
   }
-
 }
 
 .demographics {
   @include setHeader2;
-
   .population {
     .tokyo {
       margin: 30px 20px;
@@ -135,59 +116,48 @@ header {
       max-width: 340px;
       border-radius: $img-border;
     }
-
     p {
       padding: $text-padding;
     }
   }
 }
-
 .culture-images {
   @include setImg;
   margin-top: 40px;
   display: flex;
   justify-content: space-evenly;
 }
-
 .culture {
   @include setHeader2;
-
   .h-culture {
     text-align: center;
     font-size: 2.3em;
     font-family: $font-stack-main-headers;
   }
-
   .architecture {
     p {
       padding: $text-padding;
     }
   }
-
   .anime {
     @include setHeader2;
     @include setImg;
-
     .about-anime {
       .anime-img {
         float: right;
         border-radius: $img-border;
         margin: 10px;
       }
-
       p {
         padding: $text-padding;
       }
     }
   }
-
   .tea-tradition {
     @include setHeader2;
-
     p {
       padding: $text-padding;
     }
-
     .tea-img {
       display: flex;
       justify-content: center;
@@ -198,18 +168,15 @@ header {
 
 .contact-us {
   @include setBtn;
-
   margin: 10% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   h2 {
     font-family: $font-stack-secondary-headers;
     font-size: 2em;
     margin: 10px;
   }
-
   .email-input,
   .text-input {
     padding: 10px;
@@ -221,17 +188,14 @@ header {
     font-family: $font-stack-regular;
     font-size: 1.2em;
   }
-
   .text-input {
     height: 150px;
   }
 }
-
 footer {
   background-color: $bg-head-foot;
   font-family: $font-stack-secondary-headers;
   font-size: 1.6em;
-
   .footer-links {
     @include setLink;
     @include setList;
@@ -239,88 +203,71 @@ footer {
     justify-content: space-evenly;
     padding-top: 50px;
   }
-
   .rights {
     text-align: center;
     padding: 50px;
     color: #b8336a;
   }
-
 }
 
 @media (max-width:1230px) {
   .navigation {
     font-size: 1.3em;
-
     .logo-img {
       margin: 20px;
     }
-
     .logo-name {
       margin-top: 30px;
       font-size: 1.5em;
     }
-
     .nav-items {
       flex: 3;
       display: flex;
       justify-content: center;
     }
-
     ul {
       li {
         padding: 15px;
       }
     }
   }
-
   .main-info {
     .main-img img {
       width: 280px;
     }
-
     .main-text {
       letter-spacing: 2px;
       font-size: 1em;
     }
   }
-
   .content {
     font-size: 1em;
   }
-
   .geography {
     .geo-images {
       @include tabletImg;
     }
   }
-
   .culture-images {
     @include tabletImg;
   }
-
   .anime-img {
     img {
       width: 200px;
     }
   }
-
   .tea-img {
     img {
       width: 430px;
     }
   }
-
   .contact-us {
-
     .email-input,
     .text-input {
       width: 40%;
       font-size: 1.1em;
     }
-
   }
-
   footer {
     font-size: 1.3em;
   }
@@ -330,23 +277,19 @@ footer {
   body {
     background-image: none;
   }
-
   .content {
     margin: 0;
     width: 100%;
     justify-content: center;
   }
-
   .navigation {
     font-size: 1.3em;
     flex-direction: column;
-
     .nav-items {
       flex: 3;
       display: flex;
       justify-content: center;
       font-size: 0.9em;
-
       ul {
         li {
           padding: 10px;
@@ -354,22 +297,18 @@ footer {
       }
     }
   }
-
   .main-info {
     .main-img img {
       width: 260px;
     }
-
     .main-text {
       letter-spacing: 1px;
       font-size: 1em;
     }
   }
-
   .content {
     font-size: 1em;
   }
-
   .japan-flag,
   .geography,
   .population,
@@ -377,16 +316,13 @@ footer {
   .tea-img {
     @include phoneImg;
   }
-
   .contact-us {
     background-color: $bg-head-foot;
     margin: 0;
-
     .button {
       width: 20%;
     }
   }
-
   footer {
     .footer-links {
       nav {
@@ -395,15 +331,11 @@ footer {
           flex-direction: column;
           align-items: center;
           font-size: 1em;
-
         }
       }
-
     }
   }
-
 }
-
 @media (max-width: 375px) {
   .nav-items {
     ul {
